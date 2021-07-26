@@ -1,0 +1,29 @@
+/******************************************************************************
+
+Welcome to GDB Online.
+GDB online is an online compiler and debugger tool for C, C++, Python, Java, PHP, Ruby, Perl,
+C#, VB, Swift, Pascal, Fortran, Haskell, Objective-C, Assembly, HTML, CSS, JS, SQLite, Prolog.
+Code, Compile, Run and Debug online from anywhere in world.
+
+***************************************************************************/
+import java.util.Scanner;
+public class Main
+{
+	public static void main(String[] args) {
+	    Scanner leitor = new Scanner (System.in);
+	    
+	    int[][] matriz = new int[4][4];
+	    int i,j;
+	 System.out.println("vamos preencher uma matriz de 4 linhas e 4 colunas..");
+		 System.out.println("digite os 16 numeros da matriz:");
+		 for(i=0; i<4; i++){
+	    for(j=0; j<4; j++){
+	    matriz[i][j] = leitor.nextInt();
+	    }
+		 }
+	  System.out.println(" Diagonal Principal: "+matriz[0][0]+","+matriz[1][1]+","+matriz[2][2]+","+matriz[3][3]);
+	    
+	  System.out.println(" Diagonal Secundaria: "+matriz[0][3]+","+matriz[1][2]+","+matriz[2][1]+","+matriz[3][0]);
+	  
+ }
+}
